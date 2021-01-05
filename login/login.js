@@ -21,7 +21,7 @@
         var params = $(this).serialize();
         $.ajax({
             type: 'post',
-            url: "http://ajax.frontend.itheima.net/api/reguser",
+            url: "/api/reguser",
             data: params,
             success: function(res) {
                 layer.msg(res.message);
@@ -62,7 +62,7 @@
         var params = $(this).serialize();
         $.ajax({
             type: 'post',
-            url: "http://ajax.frontend.itheima.net/api/login",
+            url: "/api/login",
             data: params,
             success: function(res) {
                 layer.msg(res.message);

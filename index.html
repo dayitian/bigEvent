@@ -27,9 +27,10 @@
                     </a>
 
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/info/info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="./user/repwd/repwd.html" target="fm">重置密码</a></dd>
+                        <dd><a href="./user/avatar/avatar.html" target="fm">更换头像</a></dd>
+
                     </dl>
 
                 </li>
@@ -42,8 +43,7 @@
 
             </ul>
         </div>
-
-
+        <!-- 左侧区域 -->
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧：顶部欢迎词 -->
@@ -72,21 +72,21 @@
 
                         <dl class="layui-nav-child">
                             <dd>
-                                <a href="./article/category.html" target="fm">
+                                <a href="./article/category/category.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>类别管理
                                 </a>
                             </dd>
 
 
                             <dd>
-                                <a href="./article/article.html" target="fm">
+                                <a href="./article/article/article.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>文章列表
                                 </a>
                             </dd>
 
 
                             <dd>
-                                <a href="./article/publisher.html" target="fm">
+                                <a href="./article/publisher/publisher.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>发表文章
                                 </a>
                             </dd>
@@ -105,19 +105,19 @@
                         <dl class="layui-nav-child">
 
                             <dd>
-                                <a href="./user_info/user_info.html" target="fm">
+                                <a href="/user/info/info.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>基本资料
                                 </a>
                             </dd>
 
                             <dd>
-                                <a href="./user/repwd.html" target="fm">
+                                <a href="./user/repwd/repwd.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i> 重置密码
                                 </a>
                             </dd>
 
                             <dd>
-                                <a href="./user/avatar.html" target="fm">
+                                <a href="./user/avatar/avatar.html" target="fm">
                                     <i class="layui-icon layui-icon-app"></i>更换头像
                                 </a>
                             </dd>
@@ -129,23 +129,23 @@
                 </ul>
             </div>
         </div>
-
+        <!-- 右侧iframe区域 -->
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <!-- <div style="padding: 15px;">内容主体区域</div> -->
             <iframe src="./home/home.html" name="fm" frameborder="0"></iframe>
         </div>
-
+        <!-- 底部 -->
         <div class="layui-footer">
             <!-- 底部固定区域 -->
             © layui.com - 底部固定区域
         </div>
     </div>
-    <script src="./assets/lib/layui/layui.all.js"></script>
-    <script src="./assets/lib/jquery.js"></script>
-    <script src="./index/index.js"></script>
 </body>
+
 <script src="./assets/lib/jquery.js"></script>
+<script src="./assets/lib/layui/layui.all.js"></script>
+<script src="./common.js"></script>
 <script src="./index/index.js"></script>
 
 </html>
